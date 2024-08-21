@@ -1,0 +1,28 @@
+-- 15번
+-- 휴학생이 아닌 학생 중 평점이 4.0 이상인 학생을 찾아
+-- 학생의 학번, 이름, 학과, 이름, 평점을 조회하시오.
+
+
+SELECT 
+  STUDENT_NO 학번,
+  STUDENT_NAME 이름,
+  DEPARTMENT_NAME "학과 이름",
+  POINT 평점
+  
+FROM 
+  TB_STUDENT JOIN TB_DEPARTMENT USING (DEPARTMENT_NO)
+  JOIN TB_GRADE USING (STUDENT_NO)
+WHERE 
+  ABSENCE_YN = 'N'
+AND 
+  POINT >= 4.0
+ORDER BY POINT ASC;
+  
+
+
+  
+
+  
+SELECT * FROM TB_DEPARTMENT;
+SELECT * FROM TB_GRADE;
+SELECT * FROM TB_STUDENT;

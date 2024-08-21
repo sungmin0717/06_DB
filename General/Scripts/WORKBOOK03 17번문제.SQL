@@ -1,0 +1,27 @@
+-- 17번
+-- 춘 기술대학교에 다니고 있는 최경희 학생과 같은 과 학생들의 이름과 주소를 조회하시오.
+
+
+
+SELECT 
+  STUDENT_NAME,
+  STUDENT_ADDRESS
+FROM 
+  TB_STUDENT JOIN TB_DEPARTMENT USING (DEPARTMENT_NO)
+WHERE 
+     DEPARTMENT_NAME =   (
+        SELECT 
+          DEPARTMENT_NAME
+        FROM 
+         TB_STUDENT JOIN  TB_DEPARTMENT USING (DEPARTMENT_NO)
+        WHERE 
+          STUDENT_NAME = '최경희'
+        );
+  
+
+  SELECT 
+    DEPARTMENT_NAME
+  FROM 
+   TB_STUDENT JOIN  TB_DEPARTMENT USING (DEPARTMENT_NO)
+  WHERE 
+    STUDENT_NAME = '최경희';

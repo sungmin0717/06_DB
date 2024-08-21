@@ -1,0 +1,22 @@
+-- 13번
+-- 예체능 계열 과목 중 과목 담당교수를 한 명도 배정받지 못한 과목을 찾아
+-- 과목 이름, 학과 이름을 조회하시오.
+
+
+
+SELECT 
+  CLASS_NAME ,
+  DEPARTMENT_NAME
+FROM 
+  TB_CLASS JOIN TB_DEPARTMENT USING (DEPARTMENT_NO)
+  JOIN TB_PROFESSOR USING (DEPARTMENT_NO)
+  JOIN TB_STUDENT USING (DEPARTMENT_NO)
+WHERE 
+  CATEGORY = '예체능'
+AND 
+  COACH_PROFESSOR_NO IS NULL;
+  
+
+
+
+
