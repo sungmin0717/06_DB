@@ -1,0 +1,136 @@
+-- TB_USER 테이블 생성
+
+
+CREATE TABLE TB_USER(
+	USER_NO 		NUMBER 			 CONSTRAINT TB_USER_PK PRIMARY KEY,
+	USER_ID 		VARCHAR2(30) NOT NULL,
+	USER_PW 		VARCHAR2(30) NOT NULL,
+	USER_NAME 	VARCHAR2(30) NOT NULL,
+	ENROLL_DATE DATE 				 DEFAULT CURRENT_DATE
+);
+
+
+COMMENT ON COLUMN TB_USER.USER_NO 		IS '사용자 번호';
+COMMENT ON COLUMN TB_USER.USER_ID 		IS '사용자 아이디';
+COMMENT ON COLUMN TB_USER.USER_PW 		IS '사용자 비밀번호';
+COMMENT ON COLUMN TB_USER.USER_NAME 	IS '사용자 이름';
+COMMENT ON COLUMN TB_USER.ENROLL_DATE IS '사용자 가입일';
+
+
+-- USER_NO 컬럼에 삽입될 시퀀스 생성
+
+
+CREATE SEQUENCE SEQ_USER_NO NOCACHE;
+
+-- 샘플 데이터 INSERT
+
+INSERT INTO TB_USER 
+VALUES(SEQ_USER_NO.NEXTVAL, 
+	'USER01', 'PASS01', '유저일', DEFAULT);
+
+SELECT * FROM TB_USER;
+
+
+COMMIT;
+
+UPDATE
+	TB_USER
+SET
+	USER_NAME = '유저일'
+WHERE 
+	USER_ID = 'USER01' AND USER_PW = 'PASS01' ;
+	
+ROLLBACK;
+
+SELECT * FROM TB_USER;
+COMMIT;
+
+
+
+
+
+
+-- 모든 user 조회
+SELECT
+	USER_NO,
+	USER_ID,
+	USER_PW,
+	USER_NAME,
+	TO_CHAR(ENROLL_DATE, 'YYYY"년" MM"월" DD"일"')
+
+FROM TB_USER
+ORDER BY USER_NO ASC;
+
+
+
+
+-- 검색어가 이름에 포함된 User 조회
+
+SELECT
+	USER_NO,
+	USER_ID,
+	USER_PW,
+	USER_NAME,
+	TO_CHAR(ENROLL_DATE, 'YYYY"년" MM"월" DD"일"')
+
+FROM TB_USER
+
+WHERE USER_NAME LIKE '%' || '유' ||  '%'
+
+ORDER BY USER_NO ASC;
+
+--이름을 입력받아 삭제하기
+
+SELECT
+		USER_NO,
+	USER_ID,
+	USER_PW,
+	USER_NAME,
+	ENROLL_DATE
+FROM
+	TB_USER
+WHERE 
+	USER_NAME = '김지윤';
+
+
+-- User_NO를 입력 받아 일치하는 User 삭제
+DELETE	 
+FROM TB_USER
+WHERE USER_NO = ?;
+--일치하는 유저가 있을 경우 1 행 삭제
+--일치하는 유저가 없을 경우 0 행 삭제
+
+
+-- 아이디 비밀번호가 일치하는 회원의 조회
+
+
+SELECT
+	USER_NO
+FROM
+	TB_USER
+WHERE 
+	USER_ID = 'USER01'
+AND
+	USER_PW = 'PASS01';
+
+SELECT
+	*
+FROM
+	TB_USER;
+
+--- 업데이트
+UPDATE TB_USER
+SET
+	USER_NAME '블라블라'
+WHERE
+	USER_NO 1;
+-- 중복 되는 아이디가 있는지 조회.
+-- 중복이면 1 아니면 0 
+SELECT
+	COUNT(*)
+FROM
+	TB_USER
+WHERE USER_ID = 'kimjiyoon';
+	
+
+
