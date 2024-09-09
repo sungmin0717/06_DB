@@ -57,8 +57,28 @@ ORDER BY TODO_NO ASC;
 SELECT * FROM TB_TODO;
 
 
-
-
+		UPDATE 
+			TB_TODO
+		SET
+			TODO_COMPLETE = DECODE(TODO_COMPLETE, 0, 1, 0)
+		WHERE 
+			TODO_NO = 1;
+		
+		
+		UPDATE
+			TB_TODO
+		SET
+			TODO_TITLE = "",
+			TODO_DETAIL = "T"
+		WHERE
+			TODO_NO = 1;
+		
+			DELETE FROM 
+				TB_TODO
+			WHERE 
+				TODO_NO = 1;
+			SELECT * FROM TB_TODO;
+		ROLLBACK;
 
 
 
