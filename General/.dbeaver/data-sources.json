@@ -98,6 +98,77 @@
 				},
 				"auth-model": "oracle_native"
 			}
+		},
+		"oracle_thin-191de79dc65-1f06c1e28752d3b9": {
+			"provider": "oracle",
+			"driver": "oracle_thin",
+			"name": "SPRING_KSM(SPRING1234)",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "1521",
+				"database": "XE",
+				"url": "jdbc:oracle:thin:@//localhost:1521/XE",
+				"configurationType": "MANUAL",
+				"home": "C:\\app\\user1\\product\\18.0.0\\dbhomeXE",
+				"type": "dev",
+				"closeIdleConnection": true,
+				"provider-properties": {
+					"@dbeaver-connection-type@": "BASIC",
+					"show-only-one-schema@": "false",
+					"@dbeaver-check-schema-content@": "false",
+					"@dbeaver-always-show-dba@": "false",
+					"@dbeaver-always-use-dba-views@": "false",
+					"@dbeaver-meta-use-sys-schema@": "false",
+					"@dbeaver-meta-use-simple-constraints@": "false",
+					"@dbeaver-use-rule-hint@": "false",
+					"@dbeaver-use-meta-optimizer@": "true",
+					"@dbeaver-meta-use-alternative-table-query@": "false",
+					"oracle.meta-search-in-synonyms": "false",
+					"oracle.show-date-as-date": "false",
+					"@dbeaver-sid-service@": "SERVICE"
+				},
+				"auth-model": "oracle_native"
+			},
+			"filters": [
+				{
+					"type": "org.jkiss.dbeaver.ext.oracle.model.OracleSchema",
+					"enabled": true,
+					"include": ["SPRING_KSM"]
+				}
+			]
+		},
+		"oracle_thin-191e00afa8b-1d513c4acc99971c": {
+			"provider": "oracle",
+			"driver": "oracle_thin",
+			"name": "GVIDEO",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "1521",
+				"database": "XE",
+				"url": "jdbc:oracle:thin:@//localhost:1521/XE",
+				"configurationType": "MANUAL",
+				"home": "C:\\app\\user1\\product\\18.0.0\\dbhomeXE",
+				"type": "dev",
+				"closeIdleConnection": true,
+				"provider-properties": {
+					"@dbeaver-connection-type@": "BASIC",
+					"show-only-one-schema@": "false",
+					"@dbeaver-check-schema-content@": "false",
+					"@dbeaver-always-show-dba@": "false",
+					"@dbeaver-always-use-dba-views@": "false",
+					"@dbeaver-meta-use-sys-schema@": "false",
+					"@dbeaver-meta-use-simple-constraints@": "false",
+					"@dbeaver-use-rule-hint@": "false",
+					"@dbeaver-use-meta-optimizer@": "true",
+					"@dbeaver-meta-use-alternative-table-query@": "false",
+					"oracle.meta-search-in-synonyms": "false",
+					"oracle.show-date-as-date": "false",
+					"@dbeaver-sid-service@": "SERVICE"
+				},
+				"auth-model": "oracle_native"
+			}
 		}
 	},
 	"virtual-models": {"oracle_thin-1914e877d20-5bcea14d6b4d09e0":{"KH_KSM":{"@properties":{"erd.diagram.state":{"serialized":"\u003cdiagram version\u003d\"1\" name\u003d\"empty\" time\u003d\"202408221747\"\u003e\u003centities\u003e\u003cdata-source id\u003d\"oracle_thin-1914e877d20-5bcea14d6b4d09e0\"\u003e\u003centity id\u003d\"1\" name\u003d\"DEPARTMENT\" fq-name\u003d\"KH_KSM.DEPARTMENT\" order\u003d\"0\" font\u003d\"Segoe UI:9:0\" x\u003d\"215\" y\u003d\"44\"\u003e\u003cpath name\u003d\"KH_KSM\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"2\" name\u003d\"DEPARTMENT2\" fq-name\u003d\"KH_KSM.DEPARTMENT2\" order\u003d\"1\" font\u003d\"Segoe UI:9:0\" x\u003d\"235\" y\u003d\"717\"\u003e\u003cpath name\u003d\"KH_KSM\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"3\" name\u003d\"DEPARTMENT3\" fq-name\u003d\"KH_KSM.DEPARTMENT3\" order\u003d\"2\" font\u003d\"Segoe UI:9:0\" x\u003d\"437\" y\u003d\"717\"\u003e\u003cpath name\u003d\"KH_KSM\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"4\" name\u003d\"EMPLOYEE\" fq-name\u003d\"KH_KSM.EMPLOYEE\" order\u003d\"3\" font\u003d\"Segoe UI:9:0\" x\u003d\"40\" y\u003d\"84\"\u003e\u003cpath name\u003d\"KH_KSM\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"5\" name\u003d\"EMPLOYEE2\" fq-name\u003d\"KH_KSM.EMPLOYEE2\" order\u003d\"4\" font\u003d\"Segoe UI:9:0\" x\u003d\"216\" y\u003d\"1600\"\u003e\u003cpath name\u003d\"KH_KSM\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"6\" name\u003d\"EMPLOYEE3\" fq-name\u003d\"KH_KSM.EMPLOYEE3\" order\u003d\"5\" font\u003d\"Segoe UI:9:0\" x\u003d\"444\" y\u003d\"1628\"\u003e\u003cpath name\u003d\"KH_KSM\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"7\" name\u003d\"EMPLOYEE_COPY\" fq-name\u003d\"KH_KSM.EMPLOYEE_COPY\" order\u003d\"6\" font\u003d\"Segoe UI:9:0\" x\u003d\"652\" y\u003d\"1628\"\u003e\u003cpath name\u003d\"KH_KSM\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"8\" name\u003d\"EMP_01\" fq-name\u003d\"KH_KSM.EMP_01\" order\u003d\"7\" font\u003d\"Segoe UI:9:0\" x\u003d\"645\" y\u003d\"717\"\u003e\u003cpath name\u003d\"KH_KSM\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"9\" name\u003d\"EMP_M01\" fq-name\u003d\"KH_KSM.EMP_M01\" order\u003d\"8\" font\u003d\"Segoe UI:9:0\" x\u003d\"40\" y\u003d\"2012\"\u003e\u003cpath name\u003d\"KH_KSM\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"10\" name\u003d\"EMP_M02\" fq-name\u003d\"KH_KSM.EMP_M02\" order\u003d\"9\" font\u003d\"Segoe UI:9:0\" x\u003d\"242\" y\u003d\"2012\"\u003e\u003cpath name\u003d\"KH_KSM\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"11\" name\u003d\"JOB\" fq-name\u003d\"KH_KSM.JOB\" order\u003d\"10\" font\u003d\"Segoe UI:9:0\" x\u003d\"213\" y\u003d\"208\"\u003e\u003cpath name\u003d\"KH_KSM\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"12\" name\u003d\"LOCATION\" fq-name\u003d\"KH_KSM.LOCATION\" order\u003d\"11\" font\u003d\"Segoe UI:9:0\" x\u003d\"392\" y\u003d\"38\"\u003e\u003cpath name\u003d\"KH_KSM\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"13\" name\u003d\"MEMBER\" fq-name\u003d\"KH_KSM.\u0026quot;MEMBER\u0026quot;\" order\u003d\"12\" font\u003d\"Segoe UI:9:0\" x\u003d\"40\" y\u003d\"1140\"\u003e\u003cpath name\u003d\"KH_KSM\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"14\" name\u003d\"NATIONAL\" fq-name\u003d\"KH_KSM.\u0026quot;NATIONAL\u0026quot;\" order\u003d\"13\" font\u003d\"Segoe UI:9:0\" x\u003d\"578\" y\u003d\"60\"\u003e\u003cpath name\u003d\"KH_KSM\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"15\" name\u003d\"SAL_GRADE\" fq-name\u003d\"KH_KSM.SAL_GRADE\" order\u003d\"14\" font\u003d\"Segoe UI:9:0\" x\u003d\"218\" y\u003d\"334\"\u003e\u003cpath name\u003d\"KH_KSM\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"16\" name\u003d\"USER_GRADE\" fq-name\u003d\"KH_KSM.USER_GRADE\" order\u003d\"15\" font\u003d\"Segoe UI:9:0\" x\u003d\"40\" y\u003d\"732\"\u003e\u003cpath name\u003d\"KH_KSM\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"17\" name\u003d\"USER_GRADE2\" fq-name\u003d\"KH_KSM.USER_GRADE2\" order\u003d\"16\" font\u003d\"Segoe UI:9:0\" x\u003d\"242\" y\u003d\"528\"\u003e\u003cpath name\u003d\"KH_KSM\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"18\" name\u003d\"USER_GRADE3\" fq-name\u003d\"KH_KSM.USER_GRADE3\" order\u003d\"17\" font\u003d\"Segoe UI:9:0\" x\u003d\"242\" y\u003d\"936\"\u003e\u003cpath name\u003d\"KH_KSM\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"19\" name\u003d\"USER_TEST\" fq-name\u003d\"KH_KSM.USER_TEST\" order\u003d\"18\" font\u003d\"Segoe UI:9:0\" x\u003d\"652\" y\u003d\"1364\"\u003e\u003cpath name\u003d\"KH_KSM\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"20\" name\u003d\"USER_USED_CHECK\" fq-name\u003d\"KH_KSM.USER_USED_CHECK\" order\u003d\"19\" font\u003d\"Segoe UI:9:0\" x\u003d\"241\" y\u003d\"1123\"\u003e\u003cpath name\u003d\"KH_KSM\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"21\" name\u003d\"USER_USED_FK\" fq-name\u003d\"KH_KSM.USER_USED_FK\" order\u003d\"20\" font\u003d\"Segoe UI:9:0\" x\u003d\"40\" y\u003d\"1688\"\u003e\u003cpath name\u003d\"KH_KSM\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"22\" name\u003d\"USER_USED_FK2\" fq-name\u003d\"KH_KSM.USER_USED_FK2\" order\u003d\"21\" font\u003d\"Segoe UI:9:0\" x\u003d\"40\" y\u003d\"468\"\u003e\u003cpath name\u003d\"KH_KSM\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"23\" name\u003d\"USER_USED_FK3\" fq-name\u003d\"KH_KSM.USER_USED_FK3\" order\u003d\"22\" font\u003d\"Segoe UI:9:0\" x\u003d\"40\" y\u003d\"876\"\u003e\u003cpath name\u003d\"KH_KSM\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"24\" name\u003d\"USER_USED_NN\" fq-name\u003d\"KH_KSM.USER_USED_NN\" order\u003d\"23\" font\u003d\"Segoe UI:9:0\" x\u003d\"443\" y\u003d\"1123\"\u003e\u003cpath name\u003d\"KH_KSM\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"25\" name\u003d\"USER_USED_PK\" fq-name\u003d\"KH_KSM.USER_USED_PK\" order\u003d\"24\" font\u003d\"Segoe UI:9:0\" x\u003d\"651\" y\u003d\"1123\"\u003e\u003cpath name\u003d\"KH_KSM\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"26\" name\u003d\"USER_USED_PK2\" fq-name\u003d\"KH_KSM.USER_USED_PK2\" order\u003d\"25\" font\u003d\"Segoe UI:9:0\" x\u003d\"40\" y\u003d\"1374\"\u003e\u003cpath name\u003d\"KH_KSM\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"27\" name\u003d\"USER_USED_UK\" fq-name\u003d\"KH_KSM.USER_USED_UK\" order\u003d\"26\" font\u003d\"Segoe UI:9:0\" x\u003d\"242\" y\u003d\"1374\"\u003e\u003cpath name\u003d\"KH_KSM\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"28\" name\u003d\"USER_USED_UK2\" fq-name\u003d\"KH_KSM.USER_USED_UK2\" order\u003d\"27\" font\u003d\"Segoe UI:9:0\" x\u003d\"444\" y\u003d\"1374\"\u003e\u003cpath name\u003d\"KH_KSM\"/\u003e\u003c/entity\u003e\u003c/data-source\u003e\u003c/entities\u003e\u003crelations\u003e\u003crelation name\u003d\"DEPT_CODE_FK\" fq-name\u003d\"KH_KSM.EMPLOYEE.DEPT_CODE_FK\" type\u003d\"fk\" pk-ref\u003d\"1\" fk-ref\u003d\"4\"/\u003e\u003crelation name\u003d\"JOB_CODE_FK\" fq-name\u003d\"KH_KSM.EMPLOYEE.JOB_CODE_FK\" type\u003d\"fk\" pk-ref\u003d\"11\" fk-ref\u003d\"4\"/\u003e\u003crelation name\u003d\"LOCATION_ID_FK\" fq-name\u003d\"KH_KSM.DEPARTMENT.LOCATION_ID_FK\" type\u003d\"fk\" pk-ref\u003d\"12\" fk-ref\u003d\"1\"/\u003e\u003crelation name\u003d\"NATIONAL_ID_FK\" fq-name\u003d\"KH_KSM.LOCATION.NATIONAL_ID_FK\" type\u003d\"fk\" pk-ref\u003d\"14\" fk-ref\u003d\"12\"/\u003e\u003crelation name\u003d\"SAL_LEVEL_FK\" fq-name\u003d\"KH_KSM.EMPLOYEE.SAL_LEVEL_FK\" type\u003d\"fk\" pk-ref\u003d\"15\" fk-ref\u003d\"4\"/\u003e\u003crelation name\u003d\"GRADE_CODE_FK2\" fq-name\u003d\"KH_KSM.USER_USED_FK2.GRADE_CODE_FK2\" type\u003d\"fk\" pk-ref\u003d\"17\" fk-ref\u003d\"22\"/\u003e\u003crelation name\u003d\"GRADE_CODE_FK3\" fq-name\u003d\"KH_KSM.USER_USED_FK3.GRADE_CODE_FK3\" type\u003d\"fk\" pk-ref\u003d\"18\" fk-ref\u003d\"23\"/\u003e\u003c/relations\u003e\u003c/diagram\u003e"}}}}},
