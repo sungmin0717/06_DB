@@ -57,6 +57,13 @@ ORDER BY TODO_NO ASC;
 SELECT * FROM TB_TODO;
 
 
+SELECT 
+  *
+FROM 
+  TB_TODO 
+WHERE 
+  TODO_NO = 1;
+
 
 
 
