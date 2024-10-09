@@ -30,6 +30,9 @@ COMMIT;
 SELECT * FROM G_VIDEO;
 
 INSERT INTO "G_VIDEO"
-VALUES(PK_G_USER_NO.NEXTVAL, '멍멍이','sungmin48601@gmail.com', 'sungmin00',
+VALUES(PK_G_USER_NO.NEXTVAL, '김성민','sungmin486012@gmail.com', 'tg9415;;',
 DEFAULT, DEFAULT,NULL 
 	);
+	
+s
+	
